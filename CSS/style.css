@@ -7,10 +7,13 @@
 }
 #navbar{
     display: flex;
+    min-height: 70px;
     align-items: center;
    background-color: rgba(0, 0, 0, 0.911);
-    position: fixed;
+   justify-content: space-between;
+   position: fixed;
     top: 0;
+    padding: 0 24px;
   width: 100%;
   font-family: 'Gloock', serif;
   z-index: 10;
@@ -21,16 +24,11 @@
 }
 #navbar ul{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 11px;
+    text-align: center;
 }
-/* #navbar::before{
-    content: "";
-    background-color: black;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.3;
-} */
 #navbar ul li{
     list-style: none;
     font-size: 20px;
@@ -74,6 +72,25 @@
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #000000;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .item{
+        margin: 0;
+        padding: 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+
 }
  
 
@@ -195,6 +212,13 @@ h2{
     text-decoration: line-through  red;
     color: rgba(255, 255, 255, 0.774);
     font-size: 25px;
+    
+}
+.discount{
+    color: rgb(231, 247, 5);
+    font-size: large;
+    padding: 0.5rem;
+    font-weight: bold;
 }
 
 .card-content{

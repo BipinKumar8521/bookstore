@@ -11,20 +11,6 @@ var swiper = new Swiper(".mySwiper", {
   });
 
 
-  // let Btn = document.querySelectorAll(".card-btn");
-  // Btn.addEventListener("click", showMsg);
-  //     function showMsg(e) {
-  //       if (Btn.textContent == "Add+") {
-  //         Btn.textContent = "Added";
-  //         Btn.style.backgroundColor="green";
-  //         Btn.style.color="white";
-  //       } else {
-  //         Btn.textContent = "Add+";
-  //         Btn.style.backgroundColor="aliceblue";
-  //         Btn.style.color="#0760e6";
-  //     }
-  //   }
-  
   document.querySelectorAll('.card-btn').forEach(function(e) {
     e.addEventListener('click', function() {
         if (this.textContent == "Add+"){
@@ -38,3 +24,20 @@ var swiper = new Swiper(".mySwiper", {
     }
     })
   });
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () =>{
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll("#navbar>ul>li>a").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+
+}))
+
+
+
