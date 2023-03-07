@@ -10,21 +10,6 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
-
-  document.querySelectorAll('.card-btn').forEach(function(e) {
-    e.addEventListener('click', function() {
-        if (this.textContent == "Add+"){
-          this.textContent = "Added"
-            this.style.backgroundColor="green"
-            this.style.color="white"
-        }else{
-          this.textContent = "Add+"
-      this.style.backgroundColor = "aliceblue";
-      this.style.color="#0760e6";
-    }
-    })
-  });
-
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -38,6 +23,19 @@ document.querySelectorAll("#navbar>ul>li>a").forEach(n => n.addEventListener("cl
   navMenu.classList.remove("active");
 
 }))
+
+
+document.querySelectorAll('.card-btn').forEach(function(e) {
+  e.addEventListener('click', function() {
+      if (this.textContent == "Add+"){
+        this.textContent = "Added"
+          this.classList.toggle("active");
+      }else{
+        this.textContent = "Add+"
+    this.classList.remove("active");
+  }
+  })
+});
 
 
 

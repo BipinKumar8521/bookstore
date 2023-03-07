@@ -162,7 +162,6 @@ h2{
     display: block;
     
     width: 63%;
-    /* height: 21rem; */
     object-fit: cover;
     margin:auto;
     border: 2px solid #90e6d9;
@@ -234,6 +233,27 @@ h2{
     background-color: #c2cffc;
 }
 .card-btn:active{
+    background-color: #92a6f0;
+}
+.card-btn.active{
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgb(41, 207, 0);
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    margin: 5px;
+}
+.card-btn.active:hover{
+    background-color: rgba(41, 207, 0, 0.842);
+}
+.card-btn.active:active{
     background-color: #92a6f0;
 }
 main{
@@ -419,10 +439,6 @@ footer p.text-center {
         margin-top: 15px;
         padding: 5px;
     }
-    /* .grid{
-        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-
-    } */
     .card-text{
         font-size: 0;
     }
@@ -505,6 +521,10 @@ footer p.text-center {
     .name {
         font-size: 28px;
         font-weight: 600;
+    }
+    .price{
+        width: 80%;
+        margin-left: 10%;
     }
 }
  
