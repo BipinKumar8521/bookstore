@@ -391,7 +391,74 @@ footer p.text-center {
     }
     .intro p{
         padding: 1px;
-        font-size: 17px;
+        font-size: 20px;
+    }
+    .btn{
+        margin-top: 15px;
+        padding: 5px;
+    }
+    .grid{
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+
+    }
+    .card-text{
+        font-size: 0;
+    }
+    .user p{
+        padding: 0 10px;
+    }
+    .reviews .client-image {
+        height: 120px;
+        width: 120px;
+    }
+    .name {
+        font-size: 28px;
+        font-weight: 600;
+    }
+}
+  @media(max-width:430px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #000000;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .item{
+        margin: 0;
+        padding: 0;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    .intro{
+        margin: 0;
+        padding-top: 80px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .intro-heading{
+        font-size: 1.5rem;
+    }
+    .intro p{
+        padding: 1px;
+        font-size: 12px;
     }
     .btn{
         margin-top: 15px;
