@@ -4,10 +4,14 @@
    text-decoration: none;
    box-sizing: border-box;
    scroll-behavior: smooth;
+
+}
+body{
+    background-image: url(../img/background1.jpg);
 }
 #navbar{
     display: flex;
-    min-height: 70px;
+    min-height: 89px;
     align-items: center;
    background-color: rgba(0, 0, 0);
    justify-content: space-between;
@@ -18,17 +22,53 @@
   font-family: 'Gloock', serif;
   z-index: 10;
 }
+
+.search {
+    height: 40px;
+    width: 50%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    left: 28%;
+    position: absolute;
+    top: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+#searchBox{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 13px;
+    border: none;
+}
+.searchBtn{
+   height: 20px;
+   width: 20px;
+   position: absolute;
+  display: flex;
+  top: 10px;
+  right: 13px;
+  cursor: pointer;
+}
+
+ion-icon{
+    color: rgb(177, 59, 59);
+    width: 100%;
+    height: 100%;
+}
 .logo{
-    height: 50px;
-    margin: 9px 9px;
+    height: 58px;
+    /* margin: 9px 9px; */
 }
 #navbar ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 11px;
+    /* gap: 11px; */
     text-align: center;
     padding: 10px;
+    padding-top: 45px;
 }
 #navbar ul li{
     list-style: none;
@@ -119,10 +159,15 @@
 }
 .heading{
     text-align: center;
-    background-color: aquamarine;
-    color: blue;
+    background-color: black;
+    color: white;
     font-family: 'Gloock', serif;
     font-size: 30px;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 15px;
+    padding-top: 4px;
+    padding-bottom: 6px;
 }
 h2{
     text-align: center;
@@ -131,12 +176,12 @@ h2{
 #Best-selling-books,
  #Our-Recommendations,
   #Review-Section{
-    padding-top: 72px;
+    padding-top: 82px;
 }
 
 .grid{
     display: grid;
-    margin-top: 100px;
+    margin-top: 70px;
     margin-bottom: 100px;
     margin-left: 40px;
     margin-right: 40px;
@@ -221,8 +266,8 @@ h2{
     padding: 1.5rem;
     font-size: 1rem;
     text-align: center;
-    color: #0760e6;
-    background-color: aliceblue;
+    color: white;
+    background-color: black;
     border: none;
     border-radius: 0.4rem;
     transition: 0.2s;
@@ -231,11 +276,11 @@ h2{
     margin: 5px;
 }
 .card-btn:hover{
-    background-color: #c2cffc;
+    background-color: rgba(39, 37, 37, 0.767);
 }
-.card-btn:active{
+/* .card-btn:active{
     background-color: #92a6f0;
-}
+} */
 .card-btn.active{
     display: block;
     width: 100%;
@@ -254,12 +299,9 @@ h2{
 .card-btn.active:hover{
     background-color: rgba(0, 144, 0, 0.747);
 }
-.card-btn.active:active{
+/* .card-btn.active:active{
     background-color: #92a6f0;
-}
-main{
-    
-}
+} */
 .reviews{
     position: relative;
     /* max-width: 900px; */
@@ -336,6 +378,16 @@ footer p.text-center {
   color: white;
 }
 
+.text-center{
+    padding: 10px;
+}
+.text-center a{
+color: white;
+}
+.text-center a:hover{
+    color: orchid;
+    text-decoration: underline;
+}
 .row{
     background-color: #3d3d3d;
 }
@@ -391,6 +443,38 @@ footer p.text-center {
     width: 100%;
     height: 100%;
   }
+
+  .go-top{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    color: #1f1f1f;
+    right: 5px;
+    bottom: 5px;
+    position: fixed;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    font-size: 22px;
+    transition: all 0.5s;
+    display: flex;
+    z-index: 1;
+    opacity: 0;
+    pointer-events:none;
+
+  }
+  .go-top:hover{
+    background-color: rgb(227, 226, 226);
+    transform:scale(1.1);
+  }
+  .go-top.active{
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+
+
 
   @media(max-width:868px){
     .hamburger{
@@ -453,6 +537,21 @@ footer p.text-center {
     .name {
         font-size: 28px;
         font-weight: 600;
+    }
+    #navbar{
+        min-height: 70px;
+    }
+    .logo{
+        height: 50px;
+        margin: 9px 9px;
+    }
+    #navbar ul{
+        padding-top: 10px;
+    }
+    .heading{
+        font-size: 27px;
+        margin-left: 15%;
+        margin-right: 15%;
     }
 }
 

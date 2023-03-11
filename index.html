@@ -12,6 +12,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/style.css" />
+    <!-- back to top js -->
+    <script src="https://kit.fontawesome.com/e222809ec0.js" crossorigin="anonymous"></script>
     <!-- swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="icon"  href="img/favicon.ico"/>
@@ -21,13 +23,18 @@
     <header>
     <nav id="navbar">
         <a href="#intro-section"> <img src="img/logo.png" alt="The Last Chapter" class="logo" /></a>
-        
+        <div class="search">
+          <input type="search" name="search" id="searchBox" placeholder="Type here to search"> 
+          <div class="searchBtn">
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+        </div>
       <ul class="nav-menu">
         <li class="item"><a href="#Best-selling-books">Best Selling Books</a></li>
         <li class="item"><a href="#Our-Recommendations">Our Recommendations</a></li>
         <li class="item"><a href="#Review-Section">Reviews Section</a></li>
         <li class="item"><a href="#Contact-us">Contact Us</a></li>
-        <li class="item"><a href="#">Login<b>/</b>SignUp</a></li>
+        <li class="item"><a href="#login">Login<b>/</b>SignUp</a></li>
       </ul>
       <div class="hamburger">
         <span class="bar"></span>
@@ -326,6 +333,9 @@
                 <li><a href="https://in.linkedin.com/" target="_blank" class="fa fa-linkedin"></a></li>
                 <li><a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a></li>
               </ul>
+              <p class="text-center "><a href="#privacy">Privacy Policy  |</a>
+              <a href="#terms">Terms and Conditions</a>
+              </p>
             
               <p class="text-center">&copy; 2023 thelastchapter.com. All rights reserved.</p>
            
@@ -333,9 +343,14 @@
         </div>
       
   </footer>
+<!-- back to top btn -->
+<a href="#" class="go-top">
+  <i class="fas fa-chevron-up"></i>
+</a>
 
-
-
+<!-- search icon js -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <!-- swiper js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="JS/script.js"></script>
