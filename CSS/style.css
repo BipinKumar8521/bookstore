@@ -7,7 +7,8 @@
 
 }
 body{
-    background-image: url(../img/background1.jpg);
+    /* background-image: url(../img/background1.jpg); */
+    background-color: #f8f8f8;
 }
 #navbar{
     display: flex;
@@ -77,7 +78,7 @@ ion-icon{
 }
 #navbar ul li a{
     display: block;
-    padding: 3px 22px;
+    padding: 3px 15px;
     border-radius: 20px;
     color: white;
 }
@@ -348,6 +349,59 @@ h2{
     font-weight: 400;
     color: #333;
 }
+.review-form{
+    border: 2px solid black;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5vh;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    text-align: start;
+}
+.review-form p{
+    padding-left: 15%;
+    font-weight: bold;
+}
+.review-form h1{
+    text-align: center;
+    font-family: 'Gloock', serif;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="submit"],
+textarea{
+  width: 55%;
+ border-radius: 5px;
+ border: 1px solid black;
+ margin: 10px;
+ color: #000000;
+ padding: 10px;
+}
+textarea{
+    width: 80%;
+}
+input[type="submit"]{
+    background-color: green;
+    border: 2px solid green;
+    color: white;
+   border: none;
+   font-weight: bold;
+   cursor: pointer;
+   margin-left: 25%;
+}
+input[type="submit"]:hover{
+    border: 2px solid green;
+    background-color:white;
+    color: green;
+    font-weight: bold;
+ }
+ input[type="submit"]:active{
+     background-color: green;
+     border: 2px solid green;
+     color: white;
+ }
 
 footer {
   background-color: #f8f8f8;
@@ -642,5 +696,15 @@ color: white;
     #navbar{
         padding: 0 10px;
     }
+    
+    input[type="text"], input[type="email"], input[type="number"], input[type="submit"], textarea {
+    width: 90%;}
+   .review-form p {
+    padding-left: 0%;}
+
+    input[type="submit"]{
+        margin-left: 6%;
+    }
+
 }
  
