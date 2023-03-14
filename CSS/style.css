@@ -102,6 +102,9 @@ ion-icon{
     transition: all 0.3s ease-in-out;
     background-color: white;
 }
+main{
+    margin-top: 10vh;
+}
 #intro-section{
     background-image: url(../img/background.jpg);
     height: 500px;
@@ -178,13 +181,13 @@ h2{
 #Best-selling-books,
  #Our-Recommendations,
   #Review-Section{
-    padding-top: 82px;
+    padding-top: 18vh;
 }
 
 .grid{
     display: grid;
-    margin-top: 70px;
-    margin-bottom: 100px;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
     margin-left: 40px;
     margin-right: 40px;
     grid-gap: 3rem;
@@ -208,11 +211,11 @@ h2{
 }
 .card-img{
     display: block;
-    
     width: 63%;
     object-fit: cover;
     margin:auto;
     border: 2px solid #90e6d9;
+    margin-top: 1rem;
 }
 .price{
     font-size: 30px;
