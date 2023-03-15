@@ -211,7 +211,7 @@ h2{
 }
 .card-img{
     display: block;
-    width: 63%;
+    height: 50vh;
     object-fit: cover;
     margin:auto;
     border: 2px solid #90e6d9;

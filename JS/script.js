@@ -27,12 +27,12 @@ document.querySelectorAll("#navbar>ul>li>a").forEach(n => n.addEventListener("cl
 
 document.querySelectorAll('.card-btn').forEach(function(e) {
   e.addEventListener('click', function() {
-      if (this.textContent == "Add+"){
-        this.textContent = "Added"
-          this.classList.toggle("active");
-      }else{
+      if (this.classList.contains == "active"){
         this.textContent = "Add+"
-    this.classList.remove("active");
+        this.classList.remove("active");
+      }else{
+        this.textContent = "Added"
+        this.classList.add("active");
   }
   })
 });
