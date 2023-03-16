@@ -12,12 +12,11 @@ body{
 }
 #navbar{
     display: flex;
-    min-height: 89px;
+    min-height: 60px;
     align-items: center;
    background-color: rgba(0, 0, 0);
    justify-content: space-between;
    position: fixed;
-    top: 0;
     padding: 0 24px;
   width: 100%;
   font-family: 'Gloock', serif;
@@ -32,9 +31,9 @@ body{
     justify-content: center;
     left: 28%;
     position: absolute;
-    top: 5px;
     padding: 5px;
     border-radius: 10px;
+    margin-top: 2rem;
 }
 #searchBox{
     width: 100%;
@@ -49,7 +48,6 @@ body{
    width: 20px;
    position: absolute;
   display: flex;
-  top: 10px;
   right: 13px;
   cursor: pointer;
 }
@@ -60,7 +58,7 @@ ion-icon{
     height: 100%;
 }
 .logo{
-    height: 58px;
+    height: 45px;
     /* margin: 9px 9px; */
 }
 #navbar ul{
@@ -70,7 +68,6 @@ ion-icon{
     /* gap: 11px; */
     text-align: center;
     padding: 10px;
-    padding-top: 45px;
 }
 #navbar ul li{
     list-style: none;
@@ -107,7 +104,7 @@ main{
 }
 #intro-section{
     background-image: url(../img/background.jpg);
-    height: 500px;
+    height: 511px;
     background-size: contain;
     margin-bottom: 30px;
     
@@ -121,6 +118,7 @@ main{
 }
 .intro-heading{
     font-size: 2rem;
+    height: 4rem;
     color: orange;
     text-decoration: underline;
     /* text-shadow: 2px 2px 1px yellow;     */
@@ -166,7 +164,7 @@ main{
     text-align: center;
     background-color: black;
     color: white;
-    font-family: 'Gloock', serif;
+    font-family: 'Georgia', serif;
     font-size: 30px;
     margin-left: 35%;
     margin-right: 35%;
@@ -181,7 +179,7 @@ h2{
 #Best-selling-books,
  #Our-Recommendations,
   #Review-Section{
-    padding-top: 18vh;
+    padding-top: 14vh;
 }
 
 .grid{
@@ -190,8 +188,9 @@ h2{
     margin-bottom: 5vh;
     margin-left: 40px;
     margin-right: 40px;
-    grid-gap: 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-gap: 1.5rem;
+    grid-row-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
     grid-auto-rows: auto;
 }
 .grid-item{
@@ -218,7 +217,7 @@ h2{
     margin-top: 1rem;
 }
 .price{
-    font-size: 30px;
+    font-size: 1.2rem;
     background-color: green;
     color: white;
     border-radius: 5px;
@@ -226,7 +225,7 @@ h2{
 .old-price{
     text-decoration: line-through  red;
     color: rgba(255, 255, 255, 0.774);
-    font-size: 25px;
+    font-size: 1rem;
     
 }
 .discount{
@@ -241,35 +240,37 @@ h2{
     text-align: center;
 }
 .card-header{
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 900;
     color: #000000;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
     text-transform: capitalize;
     text-align: center;
-    
+    height: 4rem;
 }
-.card-text{
-    font-size: 1.2rem;
-    letter-spacing: 0.1rem;
-    line-height: 1.7;
+.card-text {
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.5;
     color: #3d3d3d;
-    margin-bottom: 2.5rem;
+    margin-top: 1rem;
     text-align: center;
+    height: 22vh;
 }
 .author{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     background-color: #697396;
     color: white;
     margin-bottom: 1rem;
     border-radius: 5px;
+    height: 3rem;
 }
 .card-btn{
     display: block;
     width: 100%;
     padding: 1.5rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
     color: white;
     background-color: black;
@@ -619,7 +620,6 @@ color: white;
         justify-content: center;
         left: 30%;
         position: absolute;
-        top: 18px;
         padding: 5px;
         border-radius: 10px;
     }
