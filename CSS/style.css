@@ -660,6 +660,9 @@ footer p.text-center {
   }
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(35vw, 1fr)) !important;
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-gap: 0.5rem;
   }
   .card-text {
     font-size: 0;
