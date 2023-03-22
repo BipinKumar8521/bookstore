@@ -9,6 +9,9 @@ body {
   /* background-image: url(../img/background1.jpg); */
   background-color: #f8f8f8;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 #navbar {
   display: flex;
   min-height: 60px;
@@ -98,9 +101,6 @@ ion-icon {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: white;
-}
-main {
-  margin-top: 10vh;
 }
 #intro-section {
   background-image: url(../img/background.jpg);
@@ -207,14 +207,14 @@ h2 {
 }
 .card-img {
   display: block;
-  height: 50vh;
+  height: 30vh;
   object-fit: cover;
   margin: auto;
   border: 2px solid #90e6d9;
   margin-top: 1rem;
 }
 .price {
-  font-size: 1.2rem;
+  font-size: 1rem;
   background-color: green;
   color: white;
   border-radius: 5px;
@@ -250,7 +250,7 @@ h2 {
   letter-spacing: 0.05rem;
   line-height: 1.5;
   color: #3d3d3d;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   text-align: center;
   height: auto;
 }
@@ -264,8 +264,8 @@ h2 {
 }
 .card-btn {
   display: block;
-  width: 100%;
-  padding: 1.5rem;
+  width: 50%;
+  padding: 0.5rem;
   font-size: 0.8rem;
   text-align: center;
   color: white;
@@ -275,7 +275,7 @@ h2 {
   transition: 0.2s;
   cursor: pointer;
   letter-spacing: 0.1rem;
-  margin: 5px;
+  margin-left: 25%;
 }
 .card-btn:hover {
   background-color: rgba(22, 20, 20, 0.877)
